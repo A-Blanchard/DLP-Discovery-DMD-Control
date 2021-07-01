@@ -23,7 +23,7 @@ topBuffer = 250;
 leftBuffer = 704;
 
 % Call function from MatlabUtilities
-ActiveBoxPositioning(bh, bw, topBuffer, leftBuffer, debug)
+ActiveBoxPositioning(bh, bw, topBuffer, leftBuffer, debug);
 
 
 %% 2) Point scan within the active box
@@ -40,15 +40,15 @@ locw = 0;
 %Size of block 
 binSize = 8;
 % Cycle or only one point
-cycleAll = true;
+cycleAll = false;
 
 % Call function from MatlabUtilities
-EmbedPointScanner(bh, bw, topBuffer, leftBuffer, loch, locw, binSize, cycleAll, debug)
+EmbedPointScanner(bh, bw, topBuffer, leftBuffer, loch, locw, binSize, cycleAll, debug);
 
 %% 3) Embed a pattern inside the active box
 
 % .bin file containing the pattern
-patFile = 'data/MyPattern.bin';
+patFile = 'zebra1.bin';
 
 %Size of active window (this must be compatible with the pattern saved in patFile
 % Here the patern in embeddedTrial.bin is 512x512
