@@ -49,7 +49,7 @@ info.npix = 512*512;
 %Make binary pattern 
 byteArray = MakeByteArray(trialIm, info);
 %Specify the pattern file name for saving 
-fileName = 'DMDController\data\embeddedTrial.bin';
+fileName = 'DMDController\data\MyPattern.bin';
 %Save the pattern file in .bin 
 elemCount = SaveByteArray(fileName, byteArray);
 %Name of DMD controller exe 

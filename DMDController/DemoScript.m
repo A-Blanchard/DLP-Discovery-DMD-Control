@@ -48,7 +48,7 @@ EmbedPointScanner(bh, bw, topBuffer, leftBuffer, loch, locw, binSize, cycleAll, 
 %% 3) Embed a pattern inside the active box
 
 % .bin file containing the pattern
-patFile = 'data/embeddedTrial.bin';
+patFile = 'data/MyPattern.bin';
 
 %Size of active window (this must be compatible with the pattern saved in patFile
 % Here the patern in embeddedTrial.bin is 512x512
